@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -39,9 +41,13 @@ public class MainActivity extends AppCompatActivity {
     }
     public void Random(View v){
         EditText editText1 = findViewById(R.id.editText1);
-        editText1.setText("");
+        TextView textView =findViewById(R.id.textView);
+      int r = new Random().nextInt(69);
+        String s=String.valueOf(r);
+        editText1.setText(s);
+
     }
-    public void Buy(){
+    public void Buy(View v){
         EditText editText1 = findViewById(R.id.editText1);
         EditText editText2 = findViewById(R.id.editText2);
         EditText editText3 = findViewById(R.id.editText3);
@@ -50,11 +56,11 @@ public class MainActivity extends AppCompatActivity {
         EditText editText6 = findViewById(R.id.editText6);
         TextView textView =findViewById(R.id.textView);
         String e1 = editText1.getText().toString();
-        String e2 = editText1.getText().toString();
-        String e3 = editText1.getText().toString();
-        String e4 = editText1.getText().toString();
-        String e5 = editText1.getText().toString();
-       String e6 = editText1.getText().toString();
+        String e2 = editText2.getText().toString();
+        String e3 = editText3.getText().toString();
+        String e4 = editText4.getText().toString();
+        String e5 = editText5.getText().toString();
+       String e6 = editText6.getText().toString();
         textView.setText(e1+","+e2+","+e3+","+e4+","+e5+", Power:"+e6+".");
     }
 }
