@@ -11,19 +11,20 @@
     android:layout_marginRight="10dp"
     android:layout_marginBottom="10dp"
     android:columnCount="4"
-    android:rowCount="3"
     android:horizontalSpacing="10dp"
+    android:rowCount="3"
     android:verticalSpacing="10dp"
     tools:context=".MainActivity">
 
     <android.support.v7.widget.GridLayout
-        android:layout_width="250dp"
+        android:layout_width="235dp"
         android:layout_height="200dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="92dp"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+
         app:layout_goneMarginBottom="10dp"
         app:layout_goneMarginEnd="10dp"
         app:layout_goneMarginLeft="10dp"
@@ -33,67 +34,17 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
         ]]>
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:onClick="random"
-            android:text="Button"
-            app:layout_column="0"
-            app:layout_row="1" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:onClick="random"
-            android:text="Button"
-            app:layout_column="3"
-            app:layout_row="1" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:onClick="random"
-            android:text="Button"
-            app:layout_column="4"
-            app:layout_row="1" />
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:onClick="random"
-            android:text="Button"
-            app:layout_column="3"
-            app:layout_row="3" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:onClick="random"
-            android:text="Button"
-            app:layout_column="4"
-            app:layout_row="3" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:onClick="random"
-            android:text="Button"
-            app:layout_column="0"
-            app:layout_row="3" />
 
         <EditText
             android:id="@+id/editText1"
@@ -101,24 +52,31 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:padding="5dp"
+            android:hint="1-69"
             app:layout_column="0"
+            android:label="Lotto Picker"
             app:layout_row="0" />
 
         <EditText
             android:id="@+id/editText2"
             android:layout_width="75dp"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:padding="5dp"
+            android:hint="1-69"
             app:layout_column="3"
             app:layout_row="0" />
 
         <EditText
             android:id="@+id/editText3"
-            android:layout_width="85dp"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:padding="5dp"
+            android:hint="1-69"
             app:layout_column="4"
             app:layout_row="0" />
 
@@ -128,6 +86,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:padding="5dp"
+            android:hint="1-69"
             app:layout_column="0"
             app:layout_row="2" />
 
@@ -137,18 +97,83 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:padding="5dp"
+            android:hint="1-69"
             app:layout_column="3"
             app:layout_row="2" />
 
         <EditText
             android:id="@+id/editText6"
             android:layout_width="75dp"
-            android:layout_height="35dp"
+            android:layout_height="40dp"
             android:background="@color/colorAccent"
             android:ems="10"
             android:inputType="textPersonName"
+            android:padding="5dp"
+            android:hint="1-26"
             app:layout_column="4"
             app:layout_row="2" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:onClick="random"
+            android:padding="5dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/ntitled1" />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:onClick="random"
+            android:padding="5dp"
+            app:layout_column="3"
+            app:layout_row="1"
+            app:srcCompat="@drawable/ntitled1" />
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:onClick="random"
+            android:padding="5dp"
+            app:layout_column="4"
+            app:layout_row="1"
+            app:srcCompat="@drawable/ntitled1" />
+
+        <ImageButton
+            android:id="@+id/button9"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:onClick="random"
+            android:padding="5dp"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@drawable/ntitled1" />
+
+        <ImageButton
+            android:id="@+id/button7"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:onClick="random"
+            android:padding="5dp"
+            app:layout_column="3"
+            app:layout_row="3"
+            app:srcCompat="@drawable/ntitled1" />
+
+        <ImageButton
+            android:id="@+id/button8"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:onClick="random"
+            android:padding="5dp"
+            app:layout_column="4"
+            app:layout_row="3"
+            app:srcCompat="@drawable/ntitled1" />
+
     </android.support.v7.widget.GridLayout>
 
     <Button
@@ -179,7 +204,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginBottom="102dp"
-        android:text="Purchased:"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
