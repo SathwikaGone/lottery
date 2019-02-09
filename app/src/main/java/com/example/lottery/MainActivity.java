@@ -42,6 +42,27 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("");
         editText6.setBackgroundColor(Color.RED);
     }
+    public void rand(View v){
+        EditText editText1 = findViewById(R.id.editText1);
+        EditText editText2 = findViewById(R.id.editText2);
+        EditText editText3 = findViewById(R.id.editText3);
+        EditText editText4 = findViewById(R.id.editText4);
+        EditText editText5 = findViewById(R.id.editText5);
+        EditText editText6 = findViewById(R.id.editText6);
+        int r1 = new Random().nextInt(69)+1;
+        int r3 = new Random().nextInt(69)+1;
+        int r4 = new Random().nextInt(69)+1;
+        int r5 = new Random().nextInt(69)+1;
+        int r6 = new Random().nextInt(69)+1;
+        int r2 = new Random().nextInt(26)+1;
+        editText1.setText(String.valueOf(r1));
+        editText2.setText(String.valueOf(r6));
+        editText3.setText(String.valueOf(r3));
+        editText4.setText(String.valueOf(r4));
+        editText5.setText(String.valueOf(r5));
+        editText6.setText(String.valueOf(r2));
+
+    }
     public void random(View v){
         EditText editText1 = findViewById(R.id.editText1);
         EditText editText2 = findViewById(R.id.editText2);
